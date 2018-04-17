@@ -1,4 +1,11 @@
 <dir>
+    <dir class="settings">
+        <ul>
+            <% @timer_configs.each do |timer_config| %>
+                <li><%= timer_config.name %></li>
+            <% end %>
+        </ul>
+    </dir>
     <dir>
         <p id="time">1:10</p>
     </dir>
