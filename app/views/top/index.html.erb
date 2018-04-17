@@ -1,0 +1,35 @@
+<dir>
+    <dir>
+        <p id="time">1:10</p>
+    </dir>
+    <dir>
+        <button onclick="countdown()">Start</button>
+    </dir>
+</dir>
+
+<script type="text/javascript">
+    var countdown = function(){
+        var timer = null;
+        var min = 1;
+        var sec = 10;
+        
+        function down_min(){
+            down_sec();
+            if (sec === -1) {
+                min -= 1;
+                sec = 59;
+            }
+            if (sec === 0 && min ===0 && timer != null) {
+                clearInterval(timer);
+            }
+            var time = document.getElementById("time");
+            time.innerHTML = ("00"+min).slice(-2) + ":" + ("00"+sec).slice(-2);
+            
+        }
+        
+        function down_sec(){
+            sec--;
+        }
+        timer = setInterval(down_min,1000);
+    }
+</script>

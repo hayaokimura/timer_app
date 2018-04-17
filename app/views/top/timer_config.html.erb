@@ -1,0 +1,6 @@
+<div>
+    <h2><%= @timer_config.name%></h2>
+    <% @timer_config.fragments.each do |fragment| %>
+        <p><%= fragment.minute.to_s+ "min" %></p>
+    <% end %>
+</div>

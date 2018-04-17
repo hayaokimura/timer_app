@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  timer_config_id: 1
+  minute: 1
+
+two:
+  timer_config_id: 1
+  minute: 1
