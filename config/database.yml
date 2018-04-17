@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: timer_app_production
-  username: timer_app
-  password: <%= ENV['TIMER_APP_DATABASE_PASSWORD'] %>
+  database: heroku_1f7d518eddb87b8
+  username: b95bb40308c863
+  password: <%= ENV['DATABASE_PASSWORD'] %>
